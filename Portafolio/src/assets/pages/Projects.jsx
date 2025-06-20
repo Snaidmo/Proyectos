@@ -1,15 +1,16 @@
+
+
 export const Projects = () => {
-return (
+  return (
     <section className="projects" id="projects">
-      <div className="projects__container">
-        <h2 className="projects_title">Projects</h2>
+      <div className="projects_container">
+        <h2 className="projects_title">Mis Recientes Proyectos</h2>
         <p className="projects-description">
-          Aquí puedes incluir una lista de tus proyectos más destacados, con enlaces a sus repositorios o sitios web.
-          Por ejemplo: Proyecto 1, Proyecto 2, Proyecto 3, etc.
+          Estas a unos pasos para obtener una pagina web personalizada,
+          contactame y te ayudare a crearla.
         </p>
-      </div>
+       </div>
+        
     </section>
-
-)
-
-}
+  );
+};

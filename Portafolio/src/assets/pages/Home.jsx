@@ -6,10 +6,10 @@ export const Home = () => {
     <section className="home" id="home">
       <div className="home_container">
         <h1 className="home_title">
-          Hola, Soy <span>Snaidmo</span>
+          Hola,<span>Soy Snaidmo</span>
         </h1>
         <p className="home_description">
-          Soy Estudiante de La carrera de Programación
+          Soy Estudiante de Programación
         </p>
         <p className="home_description">
           Solo se necesita disciplina y dedicación para lograr tus metas.
@@ -17,6 +17,9 @@ export const Home = () => {
         <p className="home_description">
           Futuro Desarrollador Web
         </p>
+      </div>
+      <div className="home_img">
+        <img src="https://unavatar.io/snaidmo"></img>
       </div>
     </section>
   );
