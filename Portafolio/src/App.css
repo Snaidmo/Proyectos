@@ -1,0 +1,134 @@
+:root {
+ --blanco : #fff;
+ --black : #000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  background: transparent;
+
+
+  /* padding:  20px;*/
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1200px;
+  height: 80px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.nav_logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav_logo img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  zoom: 1.5;
+}
+
+.nav_links {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--primer-color);
+}
+
+.nav_links a {
+
+  font-size: 1.5rem;
+  font-weight: 500;
+  position: relative;
+  color: var(--primer-color);
+  text-decoration: none;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav_redes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  color: var(--primer-color);
+}
+
+.nav_redes button{
+ background: transparent;
+  color: var(--primer-color);
+  font-size: 2.5rem;
+  border: none;
+
+}
+
+.nav_redes button:hover {
+ zoom: 1.2;
+}
+ 
+.nav_redes .redes {
+  color: var(--primer-color);
+}
+
+
+
+.nav_redes a {
+  color: var(--color-p);
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 2.5rem;
+}
+
+.nav_redes a:hover {
+  zoom: 1.2;
+}
+
+.nav_links a:hover {
+  color: var(--primer-color);
+  font-weight: bold;
+}
+
+
+.nav_links a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav_links a:hover::before {
+  transform: scaleX(1);
+}
+
+
+
+
