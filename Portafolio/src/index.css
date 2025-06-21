@@ -18,14 +18,17 @@ body.no-cursor {
   cursor: none;
 }
 
-body {
-  background-color: #fff;
-  color: #000;
-  transition: background-color 1s ease, color 1s ease;
+body{
+  background: var(--bg);
 }
 
-body.light-mode {
-  background-color: #000;
-  color: white;
 
+body.dark-mode {
+  --black: #fff;
+  --white: #000;
+  --text: #fff;
+  --bg: #121212;
+  --primary: #ff4b4b;
+  --accent: #6ec9f5;
+  --overlay: rgba(255, 255, 255, 0.1);
 }

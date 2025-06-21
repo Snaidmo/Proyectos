@@ -1,6 +1,11 @@
 :root {
-  --blanco: #fff;
   --black: #000;
+  --white: #fff;
+  --text: #000;
+  --bg: #fff;
+  --primary: red;
+  --accent: skyblue;
+  --overlay: rgba(0, 0, 0, 0.6);
 }
 
 * {
@@ -18,7 +23,7 @@
   align-items: center;
   justify-content: center;
   height: 80px;
-  background: transparent;
+ background: var(--bg);
 
 
   /* padding:  20px;*/
@@ -55,7 +60,7 @@
   padding: 0;
   font-size: 1.2rem;
   font-weight: 500;
-  color: var(--primer-color);
+  color: var(--text);
 }
 
 .nav_links a {
@@ -63,23 +68,17 @@
   font-size: 1.5rem;
   font-weight: 500;
   position: relative;
-  color: var(--primer-color);
+  color: var(--text);
   text-decoration: none;
   text-decoration: none;
   transition: color 0.3s;
 }
 
-.nav_redes {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 25px;
-  color: var(--primer-color);
-}
+
 
 .nav_redes button {
-  background: transparent;
-  color: var(--primer-color);
+ background: var(--bg);
+  color: var(--text);
   font-size: 2.5rem;
   border: none;
 
@@ -90,27 +89,20 @@
 }
 
 .nav_redes .redes {
-  color: var(--primer-color);
+  color: var(--text);
 }
 
-
-
 .nav_redes a {
-  color: var(--color-p);
+  color: var(--text);
   text-decoration: none;
   transition: color 0.3s;
   font-size: 2.5rem;
 }
 
-.nav_redes a:hover {
-  zoom: 1.2;
-}
-
 .nav_links a:hover {
-  color: var(--primer-color);
+  color: var(--text);
   font-weight: bold;
 }
-
 
 .nav_links a::before {
   content: "";
@@ -129,15 +121,21 @@
   transform: scaleX(1);
 }
 
+
+
+/* HOME */
 .home {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   gap: 50px;
+  padding: 0 1rem;
+  background: var(--bg);
 }
 
 .home_container {
@@ -152,7 +150,6 @@
   font-size: 1.8rem;
   color: var(--black);
   font-weight: bold;
-
 }
 
 .home_title {
@@ -173,14 +170,33 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.home_redes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 2.5rem;
+}
+
+.home_redes a {
+  color: var(--black);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+/* ABOUT ME */
 .aboutme {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   height: 100vh;
+  padding: 0 1rem;
+   background: var(--bg);
 }
 
 .aboutme_container {
@@ -204,15 +220,18 @@
   max-width: 800px;
 }
 
+/* SKILLS */
 .skills {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   height: 100vh;
-
+  padding: 0 1rem;
+   background: var(--bg);
 }
 
 .skills_container {
@@ -223,7 +242,6 @@
   text-align: center;
   width: 100%;
   height: 80%;
-
 }
 
 .skills_title {
@@ -235,28 +253,17 @@
 
 .skills-description {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: 1.5rem;
-  color: var(--black);
-  width: 1200px;
-
-  height: 100%;
-  border-radius: 20px;
+  gap: 1rem;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .skills-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 1.5rem;
-  color: var(--black);
-  width: calc(100% / 3);
-  height: 100%;
-
+  width: 100%; /* Por defecto, ocupará todo el ancho */
+  max-width: 300px; /* Evita que se estiren demasiado */
+  flex: 1 1 250px; /* Flexibilidad para adaptar columnas */
 }
 
 .skills-list .title {
@@ -267,7 +274,6 @@
   justify-content: center;
   font-size: 2rem;
   font-weight: bold;
-
 }
 
 .skills-list .list {
@@ -277,8 +283,7 @@
   justify-content: center;
   text-align: center;
   font-size: 1.5rem;
-  color: var(--black);
-
+  color: var(--text);
   width: 100%;
   height: 80%;
 }
@@ -289,14 +294,18 @@
   font-weight: bold;
 }
 
+/* PROJECTS */
 .projects {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   height: 100vh;
+  padding: 0 1rem;
+   background: var(--bg);
 }
 
 .projects_cotainer {
@@ -309,32 +318,89 @@
 
 .projects_title {
   font-size: 5rem;
-  color: var(--black);
+  color: var(--text);
 }
 
 .projects_description {
   font-size: 1.5rem;
-  color: var(--black);
+  color: var(--text);
   max-width: 800px;
 }
 
-.projects-list {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-column-gap: 15px;
-  grid-row-gap: 15px;
+/* CARDS */
+.card_container {
+  position: relative;
   width: 100%;
+  max-width: 400px;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
-.project_card {
-  background-color: var(--blanco);
-  border: 1px solid var(--black);
-  border-radius: 10px;
-  padding: 20px;
+.card_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card_container:hover img {
+  transform: scale(1.5);
+}
+
+.card_content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
   text-align: center;
-  transition: transform 0.3s ease;
-  width: 30%;
-  height: 200px;
+  padding: 10px;
+  gap: 20px;
 }
 
+.card_content a {
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.card_container:hover .card_content {
+  opacity: 1;
+}
+
+/* GRID RESPONSIVO PARA PROJECTS */
+.projects_cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* 1 columna por defecto */
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+/* Tablet y escritorio: 2 columnas */
+@media (min-width: 640px) {
+  .projects_cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .skills-list {
+    width: calc(100% / 3);
+  }
+}

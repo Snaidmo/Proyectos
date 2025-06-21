@@ -1,11 +1,10 @@
 import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { FollowMouse } from "./components/FollowMouse";
 import { Navbar } from "./components/NavBar";
-import { Home } from "./assets/pages/Home";
-import { AboutMe } from "./assets/pages/Aboutme";
-import { Skills } from "./assets/pages/Skills";
-import { Projects } from "./assets/pages/Projects";
+import { Home } from "./pages/Home";
+import { AboutMe } from "./pages/Aboutme";
+import { Skills } from "./pages/Skills";
+import { Projects } from "./pages/Projects";
 
 function App() {
   return (

@@ -3,7 +3,7 @@ export const Skills = () => {
     <section className="skills" id="skills">
       <div className="skills_container">
         <h2 className="skills_title">Skills</h2>
-        <p className="skills-description">
+        <div className="skills-description">
           <div className="skills-list">
             <div className="title">Frameworks</div>
             <div className="list">
@@ -34,7 +34,7 @@ export const Skills = () => {
             <li>Notion</li>
            </div>
           </div>
-        </p>
+        </div>
       </div>
     </section>
   );
