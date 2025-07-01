@@ -22,5 +22,6 @@ export const AboutMe = () => {
         </p>
       </div>
     </section>
+  
   );
 };
