@@ -9,13 +9,13 @@ import { Projects } from "./pages/Projects";
 function App() {
   return (
     <>
-      <FollowMouse></FollowMouse>
-      <Navbar></Navbar>
-      <Home></Home>
-      <AboutMe></AboutMe>
-      <Skills></Skills>
-      <Projects></Projects>
-    </>
+      <FollowMouse/>
+      <Navbar/>
+      <Home/>
+      <AboutMe/>
+      <Skills/>
+      <Projects/>
+      </>
   );
 }
 

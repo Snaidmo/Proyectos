@@ -23,7 +23,6 @@ export const Home = () => {
       <div className="home_img">
         <img src="https://unavatar.io/snaidmo"></img>
       </div>
-     
       <div className="home_redes">
         <a href="https://github.com/Snaidmo">
           <FontAwesomeIcon icon={faGithub} />
